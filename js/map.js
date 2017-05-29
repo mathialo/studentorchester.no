@@ -4,15 +4,17 @@ var cities = [
 	"Bergen",
 	"Kristiansand",
 	"Trondheim",
-	"Tromsø"
+	"Tromsø",
+	"Ås"
 ];
 
 var cityCenters = [
-	[142, 500],
+	[130, 500],
 	[35,  450],
 	[75,  555],
 	[150, 350],
-	[285, 105]
+	[285, 105],
+	[150, 530]
 ];
 
 var canvas; var context;
