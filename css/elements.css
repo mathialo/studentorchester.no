@@ -20,7 +20,7 @@ a.nostyle {
 	text-decoration: none;
 }
 
-.underlineonhover:hover {
+.underlineOnHover:hover {
 	text-decoration: underline;
 }
 
