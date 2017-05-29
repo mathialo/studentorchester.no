@@ -58,7 +58,7 @@ function getNearestCity(event) {
 	var mousePos = getMousePos(event);
 
 	var nearestSorFar = 0;
-	var lowestDistance = l2distance(cityCenters[nearestSorFar], l2distance(mousePos));
+	var lowestDistance = l2distance(cityCenters[nearestSorFar], mousePos);
 
 	for (var i = 1; i < cities.length; i++) {
 		if (l2distance(mousePos, cityCenters[i]) < lowestDistance) {
