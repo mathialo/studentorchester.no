@@ -16,15 +16,14 @@ h1 {
 }
 
 h2 {
+	padding-top: 120px;
 	font-weight: lighter;
 	font-size: 17pt;
 }
 
 li {
-	padding-bottom: 6pt;
+	padding-bottom: 10pt;
+	font-size: 13pt;
 }
 
-ul li:before {
-	content: \00BB;
-}
 

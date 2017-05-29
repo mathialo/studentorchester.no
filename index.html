@@ -17,12 +17,12 @@
 		</p>
 
 		<img src="img/norge2.svg" style="visibility: hidden; height: 0px; width: 0px;" id="imageLoader" alt="">
-		<div style="float: left; width: 100%; display: flex; align-items:center;">
+		<div style="float: left; width: 100%; display: flex;">
 			<canvas id="map" onmousemove="updateCityName(event)" onmouseout="resetImage()" onclick="importCityInfo(event)" width="500" height="600">
 				Hvis du ser dette støtter ikke nettleseren din canvas. Bruk en nettleser som støtter HTML5. 
 			</canvas>
-			<div style="width: 300px;">
-				<p id="mapOutput">
+			<div style="width: 300px; height: 600px;" id="mapOutput">
+				<p style="padding-top: 120px;">
 					Klikk på kartet for å få opp informasjon om studentorchestere nær deg.
 				</p>
 			</div>
