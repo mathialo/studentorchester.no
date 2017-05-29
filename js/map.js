@@ -33,7 +33,7 @@ function loadMap() {
 	resetImage();
 
 	context.font = "12pt Arial";
-	context.fillStyle = 'green';
+	// context.fillStyle = 'green';
 }
 
 function resetImage() {
