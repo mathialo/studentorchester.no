@@ -47,15 +47,23 @@ function updateCityName(event) {
 	resetImage();
 
 	var nearestIndex = getNearestCity(event);
-	context.fillText(cities[nearestIndex], cityCenters[nearestIndex][0], cityCenters[nearestIndex][1]);
+	context.fillText(
+		cities[nearestIndex],
+		cityCenters[nearestIndex][0],
+		cityCenters[nearestIndex][1]
+	);
 }
 
 function getNearestCity(event) {
+	var mousePos = getMousePos(event);
+
 	var nearestSorFar = 0;
+	var lowestDistance = l2distance(cityCenters[nearestSorFar], l2distance(mousePos));
 
 	for (var i = 1; i < cities.length; i++) {
-		if (l2distance(getMousePos(event), cityCenters[i]) < l2distance(getMousePos(event), cityCenters[nearestSorFar])) {
+		if (l2distance(mousePos, cityCenters[i]) < lowestDistance) {
 			nearestSorFar = i;
+			lowestDistance = l2distance(mousePos, cityCenters[i]);
 		}
 	}
 
@@ -71,5 +79,7 @@ function getMousePos(event) {
 }
 
 function l2distance(point1, point2) {
-	return Math.sqrt( Math.pow(point1[0] - point2[0], 2) + Math.pow(point1[1] - point2[1], 2) )
+	return Math.sqrt(
+		Math.pow(point1[0] - point2[0], 2) + Math.pow(point1[1] - point2[1], 2)
+	);
 }
