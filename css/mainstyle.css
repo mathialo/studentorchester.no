@@ -15,5 +15,16 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-weight: lighter;
+	font-size: 17pt;
+}
 
+li {
+	padding-bottom: 6pt;
+}
+
+ul li:before {
+	content: \00BB;
+}
 

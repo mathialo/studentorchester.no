@@ -9,12 +9,36 @@ var cities = [
 ];
 
 var cityCenters = [
-	[130, 500],
+	[137, 500],
 	[35,  450],
-	[75,  555],
+	[95,  545],
 	[150, 350],
 	[285, 105],
-	[150, 530]
+	[155, 517]
+];
+
+var orchestras = [
+	[
+		"<a href='http://foreninger.uio.no/bb/'>Biørneblæs</a>. Et åpent orchester for alle, men med en overvekt av realister.",
+		"Blindern Horn og Blæs. For beboere på Blindern studenthjem.",
+		"Corpsus Juris. For jurister.",
+		"Medisinsk paradeorchester. For medisinere."
+	],
+	[
+		"Bergenorkestere, i dunno"
+	],
+	[
+		"Lol, Kristiansand"
+	],
+	[
+		"Ingeniørfolk"
+	],
+	[
+		"Gokk"
+	],
+	[
+		"Bondemusikanter"
+	]
 ];
 
 var canvas; var context;
@@ -42,6 +66,15 @@ function resetImage() {
 	context.clearRect(0,0,canvas.width,canvas.height);
 	var image = document.getElementById("imageLoader");
 	context.drawImage(image, getWidth()/2 - 240, 0, 480, 650);
+	addCityCenters();
+}
+
+function addCityCenters() {
+	context.fillStyle = "#454545";
+
+	for (var i=0; i<cityCenters.length; i++) {
+		context.fillRect(cityCenters[i][0], cityCenters[i][1], 6, 6);
+	}
 }
 
 function updateCityName(event) {
@@ -49,11 +82,27 @@ function updateCityName(event) {
 	resetImage();
 
 	var nearestIndex = getNearestCity(event);
+
+	context.fillStyle = "black";
 	context.fillText(
 		cities[nearestIndex],
-		cityCenters[nearestIndex][0],
-		cityCenters[nearestIndex][1]
+		cityCenters[nearestIndex][0] - 10,
+		cityCenters[nearestIndex][1] - 10
 	);
+}
+
+function importCityInfo(event) {
+	var nearestIndex = getNearestCity(event);
+
+	var output = document.getElementById("mapOutput");
+
+	output.innerHTML = "<h2>Studentorchestere i " + cities[nearestIndex] + "</h2>";
+
+	output.innerHTML += "<ul>";
+	for (var i=0; i<orchestras[nearestIndex].length; i++) {
+		output.innerHTML += "<li>" + orchestras[nearestIndex][i] + "</li>";
+	}
+	output.innerHTML += "</ul>";
 }
 
 function getNearestCity(event) {
@@ -62,7 +111,7 @@ function getNearestCity(event) {
 	var nearestSorFar = 0;
 	var lowestDistance = l2distance(cityCenters[nearestSorFar], mousePos);
 
-	for (var i = 1; i < cities.length; i++) {
+	for (var i=1; i<cities.length; i++) {
 		if (l2distance(mousePos, cityCenters[i]) < lowestDistance) {
 			nearestSorFar = i;
 			lowestDistance = l2distance(mousePos, cityCenters[i]);
