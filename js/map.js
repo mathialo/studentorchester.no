@@ -93,16 +93,31 @@ function updateCityName(event) {
 
 function importCityInfo(event) {
 	var nearestIndex = getNearestCity(event);
+	outputCityInfo(nearestIndex);
+}
 
+function outputCityInfo(index) {
 	var output = document.getElementById("mapOutput");
 
-	output.innerHTML = "<h2>Studentorchestere i " + cities[nearestIndex] + "</h2>";
+	output.innerHTML = "<h2 id='" + cities[index] + "'>Studentorchestere i " + cities[index] + "</h2>";
 
 	output.innerHTML += "<ul>";
-	for (var i=0; i<orchestras[nearestIndex].length; i++) {
-		output.innerHTML += "<li>" + orchestras[nearestIndex][i] + "</li>";
+	for (var i=0; i<orchestras[index].length; i++) {
+		output.innerHTML += "<li>" + orchestras[index][i] + "</li>";
 	}
 	output.innerHTML += "</ul>";
+
+	window.location.replace(window.location.href.split("#")[0] + "#" + cities[index]);
+}
+
+function autoLoadFromUrl() {
+	var city = window.location.href.split("#")[1];
+
+	for (var i=0; i<cities.length; i++) {
+		if (cities[i] == city) {
+			outputCityInfo(i);
+		}
+	}
 }
 
 function getNearestCity(event) {
