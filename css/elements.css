@@ -7,23 +7,6 @@
 	width: 800px;
 }
 
-footer {
-	font-size: 8pt;
-	color: gray;
-	text-align: center;
-	padding-top: 60px;
-	padding-bottom: 100px;
-}
-
-a.nostyle {
-	color: inherit;
-	text-decoration: none;
-}
-
-.underlineOnHover:hover {
-	text-decoration: underline;
-}
-
 #map {
 	/*border:1px solid #d3d3d3;*/
 	float: left;
