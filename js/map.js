@@ -9,35 +9,55 @@ var cities = [
 ];
 
 var cityCenters = [
-	[142, 500],
-	[35,  450],
-	[95,  545],
-	[150, 350],
-	[285, 105],
-	[155, 517]
+	[142, 500], // Oslo
+	[35,  450], // Bergen
+	[95,  545], // Kristiansand
+	[150, 350], // Trondheim
+	[285, 105], // Tromsø
+	[155, 517]  // Ås
 ];
 
 var orchestras = [
-	[
-		"<img src='img/bb.png' class='orchestraImage floatLeft'><a href='http://foreninger.uio.no/bb/' class='underlineOnHover'>Biørneblæs</a>. Et åpent orchester for alle, men med en overvekt av realister.",
-		"<img src='img/bb.png' class='orchestraImage floatRight'><a href='http://www.blindern-studenterhjem.no/livet/haarn-oc-blaese/' class='underlineOnHover'>Blindern Haarn oc Blaese</a>. For beboere på Blindern studenthjem.",
-		"<img src='img/bb.png' class='orchestraImage floatLeft'><a href='http://www.corpsusjuris.com' class='underlineOnHover'>Corpsus Juris</a>. For studenter ved det Juridiske fakultet.",
-		"<img src='img/bb.png' class='orchestraImage floatRight'><a href='https://www.facebook.com/medicinsk.paradeorchaester/' class='underlineOnHover'>Medisinsk paradeorchester</a>. For medisinere."
+	[ // Oslo
+		{
+			name: "Biørneblæs",
+			link: "http://foreninger.uio.no/bb/",
+			image: "img/bb.jpg",
+			desc: "Et åpent orchester for alle, men med en overvekt av realister."
+		},
+		{
+			name: "Blindern Haarn oc Blaese",
+			link: "http://www.blindern-studenterhjem.no/livet/haarn-oc-blaese/",
+			image: "img/bb.jpg",
+			desc: "For beboere på Blindern studenthjem."
+		},
+		{
+			name: "Corpsus Juris",
+			link: "http://www.corpsusjuris.com",
+			image: "img/bb.jpg",
+			desc: "For studenter ved det Juridiske fakultet."
+		},
+		{
+			name: "Medisinsk paradeorchester",
+			link: "https://www.facebook.com/medicinsk.paradeorchaester/",
+			image: "img/bb.jpg",
+			desc: "For medisinere."
+		}
 	],
-	[
-		"Bergenorkestere, i dunno"
+	[ // Bergen
+		
 	],
-	[
-		"Lol, Kristiansand"
+	[ // Kristiansand
+		
 	],
-	[
-		"Ingeniørfolk"
+	[ // Trondheim
+		
 	],
-	[
-		"Gokk"
+	[ // Tromsø
+		
 	],
-	[
-		"Bondemusikanter"
+	[ // Ås
+		
 	]
 ];
 
@@ -101,11 +121,18 @@ function outputCityInfo(index) {
 
 	output.innerHTML = "<h2 id='" + cities[index] + "'>Studentorchestere i " + cities[index] + "</h2>";
 
-	// output.innerHTML += "<ul>";
+	
 	for (var i=0; i<orchestras[index].length; i++) {
-		output.innerHTML += "<p class='orchestraItem'>" + orchestras[index][i] + "</p>";
+		var orch = orchestras[index][i];
+
+		var imageOrientation = i%2 == 0 ? "floatLeft" : "floatRight";
+
+		output.innerHTML += "<p class='orchestraItem'>"
+			+ "<img src='" + orch.image + "' class='orchestraImage " + imageOrientation + "'>"
+			+ "<a href='" + orch.link + "' class='underlineOnHover'>" + orch.name + "</a>.<br>"
+			+ orch.desc + "</p>";
 	}
-	// output.innerHTML += "</ul>";
+	
 
 	window.location.replace(window.location.href.split("#")[0] + "#" + cities[index]);
 }
