@@ -58,6 +58,10 @@ a.nostyle {
 	text-decoration: none;
 }
 
+.underlineOnHover {
+	text-decoration: none;
+}
+
 .underlineOnHover:hover {
 	text-decoration: underline;
 }
