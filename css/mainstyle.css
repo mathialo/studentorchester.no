@@ -9,6 +9,11 @@ p {
 	font-size: 13pt;
 }
 
+p.orchestraItem {
+	margin-bottom: 15pt;
+	font-size: 12pt;
+}
+
 h1 {
 	font-weight: lighter;
 	font-size: 40pt;
@@ -16,7 +21,7 @@ h1 {
 }
 
 h2 {
-	padding-top: 120px;
+	padding-top: 100px;
 	font-weight: lighter;
 	font-size: 17pt;
 }
@@ -30,7 +35,7 @@ footer {
 	font-size: 8pt;
 	color: gray;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 10px;
 	padding-bottom: 100px;
 }
 

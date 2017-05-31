@@ -4,7 +4,12 @@
 }
 
 .element {
-	width: 800px;
+	width: 840px;
+	padding: 20px;
+/*	border-color: #656565;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;*/
 }
 
 #map {

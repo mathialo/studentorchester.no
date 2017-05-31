@@ -19,10 +19,10 @@ var cityCenters = [
 
 var orchestras = [
 	[
-		"<a href='http://foreninger.uio.no/bb/'>Biørneblæs</a>. Et åpent orchester for alle, men med en overvekt av realister.",
-		"<a href='http://www.blindern-studenterhjem.no/livet/haarn-oc-blaese/'>Blindern Haarn oc Blaese</a>. For beboere på Blindern studenthjem.",
-		"<a href='http://www.corpsusjuris.com'>Corpsus Juris</a>. For studenter ved det Juridiske fakultet.",
-		"<a href='https://www.facebook.com/medicinsk.paradeorchaester/'>Medisinsk paradeorchester</a>. For medisinere."
+		"<img src='img/bb.png' style='float: left; margin-right: 10px; height: 40px;'><a href='http://foreninger.uio.no/bb/'>Biørneblæs</a>. Et åpent orchester for alle, men med en overvekt av realister.",
+		"<img src='img/bb.png' style='float: right; margin-left: 10px; height: 40px;'><a href='http://www.blindern-studenterhjem.no/livet/haarn-oc-blaese/'>Blindern Haarn oc Blaese</a>. For beboere på Blindern studenthjem.",
+		"<img src='img/bb.png' style='float: left; margin-right: 10px; height: 40px;'><a href='http://www.corpsusjuris.com'>Corpsus Juris</a>. For studenter ved det Juridiske fakultet.",
+		"<img src='img/bb.png' style='float: right; margin-left: 10px; height: 40px;'><a href='https://www.facebook.com/medicinsk.paradeorchaester/'>Medisinsk paradeorchester</a>. For medisinere."
 	],
 	[
 		"Bergenorkestere, i dunno"
@@ -101,11 +101,11 @@ function outputCityInfo(index) {
 
 	output.innerHTML = "<h2 id='" + cities[index] + "'>Studentorchestere i " + cities[index] + "</h2>";
 
-	output.innerHTML += "<ul>";
+	// output.innerHTML += "<ul>";
 	for (var i=0; i<orchestras[index].length; i++) {
-		output.innerHTML += "<li>" + orchestras[index][i] + "</li>";
+		output.innerHTML += "<p class='orchestraItem'>" + orchestras[index][i] + "</p>";
 	}
-	output.innerHTML += "</ul>";
+	// output.innerHTML += "</ul>";
 
 	window.location.replace(window.location.href.split("#")[0] + "#" + cities[index]);
 }
