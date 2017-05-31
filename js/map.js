@@ -19,7 +19,7 @@ var cityCenters = [
 var orchestras = [
 	[ // Oslo
 		{
-			name: "Biørneblæs",
+			name: "Studentorchesteret Biørneblæs",
 			link: "http://foreninger.uio.no/bb/",
 			image: "img/bb.jpg",
 			desc: "Et åpent orchester for alle, men med en overvekt av realister."
@@ -40,23 +40,96 @@ var orchestras = [
 			name: "Medisinsk paradeorchester",
 			link: "https://www.facebook.com/medicinsk.paradeorchaester/",
 			image: "img/bb.jpg",
-			desc: "For medisinere."
+			desc: "Orchester for medisinere."
 		}
 	],
 	[ // Bergen
-		
+		{
+			name: "Direksjonsmusikken",
+			link: "http://www.direksjonsmusikken.com/",
+			image: "img/bb.jpg",
+			desc: "Studentorchester tilknyttet Norges Handelshøyskole."
+		},
+		{
+			name: "Force Marsjør Juzz-Band",
+			link: "http://force.uib.no",
+			image: "img/bb.jpg",
+			desc: "For studenter ved det Juridiske fakultet ved UiB."
+		},
+		{
+			name: "Medicinsk Blæse et Spadserensemble",
+			link: "https://www.facebook.com/Ensemblet/",
+			image: "img/bb.jpg",
+			desc: "Orchester for medisinere"
+		},
+		{
+			name: "Musikselskabet Larmonien",
+			link: "http://larmonien.b.uib.no/",
+			image: "img/bb.jpg",
+			desc: "Et orchester for alle fakulteter og studiesteder i Bergen."
+		},
+		{
+			name: "Teknolikken",
+			link: "https://www.facebook.com/teknolikken/",
+			image: "img/bb.jpg",
+			desc: "Blåseorchester ved Høgskolen i Bergen"
+		}
 	],
 	[ // Kristiansand
-		
+		{
+			name: "Spadser & Blæse-ensemblet",
+			link: "http://www.stastudent.no/spadser-blaese-ensemblet/",
+			image: "img/bb.jpg",
+			desc: "Det eneste studentorchesteret i Kristiansand. Åpent for alle."
+		}
 	],
 	[ // Trondheim
-		
+		{
+			name: "Berseblæsten",
+			link: "http://org.ntnu.no/berse/",
+			image: "img/bb.jpg",
+			desc: "Studentorchesteret til Berstudentenes forening. "
+		},
+		{
+			name: "Studentorchesteret Dei Taktlause",
+			link: "https://taktlaus.no",
+			image: "img/bb.jpg",
+			desc: "Orchesteret til linjeforeningen Sct. Omega Broderskab, men åpent for alle."
+		},
+		{
+			name: "Dragern",
+			link: "https://www.facebook.com/Dragern/",
+			image: "img/bb.jpg",
+			desc: "Et orchester som har utspring fra Bygglinjen på Gløshaugen"
+		},
+		{
+			name: "Strindens Promenade Orchester",
+			link: "http://www.strindens.no",
+			image: "img/bb.jpg",
+			desc: "Studentersamfunnets studentorchester."
+		},
+		{
+			name: "TapHel & Toddy",
+			link: "http://ttoddy.blogspot.no",
+			image: "img/bb.jpg",
+			desc: "Studentorchester ved Høiskolens Chemikerforening."
+		}
 	],
 	[ // Tromsø
-		
+		{
+			name: "Ompagniet",
+			link: "http://www.heinrich.no/ompagniet/",
+			image: "img/bb.jpg",
+			desc: "Verdens nordligste studentorchester."
+		}
 	],
 	[ // Ås
-		
+		{
+			name: "Åsblæsten",
+			link: "http://www.samfunnetiaas.no/asblaestn/",
+			image: "img/bb.jpg",
+			desc: "Det eneste studentorchesteret i Ås. Åpent for alle."
+		}
 	]
 ];
 
