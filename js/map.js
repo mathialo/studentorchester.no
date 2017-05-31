@@ -19,10 +19,10 @@ var cityCenters = [
 
 var orchestras = [
 	[
-		"<img src='img/bb.png' style='float: left; margin-right: 10px; height: 40px;'><a href='http://foreninger.uio.no/bb/'>Biørneblæs</a>. Et åpent orchester for alle, men med en overvekt av realister.",
-		"<img src='img/bb.png' style='float: right; margin-left: 10px; height: 40px;'><a href='http://www.blindern-studenterhjem.no/livet/haarn-oc-blaese/'>Blindern Haarn oc Blaese</a>. For beboere på Blindern studenthjem.",
-		"<img src='img/bb.png' style='float: left; margin-right: 10px; height: 40px;'><a href='http://www.corpsusjuris.com'>Corpsus Juris</a>. For studenter ved det Juridiske fakultet.",
-		"<img src='img/bb.png' style='float: right; margin-left: 10px; height: 40px;'><a href='https://www.facebook.com/medicinsk.paradeorchaester/'>Medisinsk paradeorchester</a>. For medisinere."
+		"<img src='img/bb.png' class='orchestraImage floatLeft'><a href='http://foreninger.uio.no/bb/'>Biørneblæs</a>. Et åpent orchester for alle, men med en overvekt av realister.",
+		"<img src='img/bb.png' class='orchestraImage floatRight'><a href='http://www.blindern-studenterhjem.no/livet/haarn-oc-blaese/'>Blindern Haarn oc Blaese</a>. For beboere på Blindern studenthjem.",
+		"<img src='img/bb.png' class='orchestraImage floatLeft'><a href='http://www.corpsusjuris.com'>Corpsus Juris</a>. For studenter ved det Juridiske fakultet.",
+		"<img src='img/bb.png' class='orchestraImage floatRight'><a href='https://www.facebook.com/medicinsk.paradeorchaester/'>Medisinsk paradeorchester</a>. For medisinere."
 	],
 	[
 		"Bergenorkestere, i dunno"
