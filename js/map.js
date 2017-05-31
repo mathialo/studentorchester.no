@@ -1,4 +1,3 @@
-
 var cities = [
 	"Oslo",
 	"Bergen",
@@ -128,7 +127,7 @@ function outputCityInfo(index) {
 		var imageOrientation = i%2 == 0 ? "floatLeft" : "floatRight";
 
 		output.innerHTML += "<p class='orchestraItem'>"
-			+ "<img src='" + orch.image + "' class='orchestraImage " + imageOrientation + "'>"
+			+ "<a class='nostyle' href='" + orch.link + "'><img src='" + orch.image + "' class='orchestraImage " + imageOrientation + "'></a>"
 			+ "<a href='" + orch.link + "' class='underlineOnHover'>" + orch.name + "</a>.<br>"
 			+ orch.desc + "</p>";
 	}

@@ -56,6 +56,7 @@ footer {
 a.nostyle {
 	color: inherit;
 	text-decoration: none;
+	border: none;
 }
 
 .underlineOnHover {
