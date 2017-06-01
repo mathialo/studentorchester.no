@@ -21,25 +21,25 @@ var orchestras = [
 		{
 			name: "Studentorchesteret Biørneblæs",
 			link: "http://foreninger.uio.no/bb/",
-			image: "img/bb.jpg",
+			image: "img/bb.png",
 			desc: "Et åpent orchester for alle, men med en overvekt av realister."
 		},
 		{
 			name: "Blindern Haarn oc Blaese",
 			link: "http://www.blindern-studenterhjem.no/livet/haarn-oc-blaese/",
-			image: "img/bb.jpg",
+			image: "img/blindernhornochblaese.png",
 			desc: "For beboere på Blindern studenthjem."
 		},
 		{
 			name: "Corpsus Juris",
 			link: "http://www.corpsusjuris.com",
-			image: "img/bb.jpg",
+			image: "img/corpsus.png",
 			desc: "For studenter ved det Juridiske fakultet."
 		},
 		{
 			name: "Medisinsk paradeorchester",
 			link: "https://www.facebook.com/medicinsk.paradeorchaester/",
-			image: "img/bb.jpg",
+			image: "img/mpo.png",
 			desc: "Orchester for medisinere."
 		}
 	],
@@ -47,7 +47,7 @@ var orchestras = [
 		{
 			name: "Direksjonsmusikken",
 			link: "http://www.direksjonsmusikken.com/",
-			image: "img/bb.jpg",
+			image: "img/direksjonsmusikken.png",
 			desc: "Studentorchester tilknyttet Norges Handelshøyskole."
 		},
 		{
@@ -93,13 +93,13 @@ var orchestras = [
 		{
 			name: "Studentorchesteret Dei Taktlause",
 			link: "https://taktlaus.no",
-			image: "img/bb.jpg",
+			image: "img/taktlause.png",
 			desc: "Orchesteret til linjeforeningen Sct. Omega Broderskab, men åpent for alle."
 		},
 		{
 			name: "Dragern",
 			link: "https://www.facebook.com/Dragern/",
-			image: "img/bb.jpg",
+			image: "img/dragern.png",
 			desc: "Et orchester som har utspring fra Bygglinjen på Gløshaugen"
 		},
 		{
@@ -127,7 +127,7 @@ var orchestras = [
 		{
 			name: "Åsblæsten",
 			link: "http://www.samfunnetiaas.no/asblaestn/",
-			image: "img/bb.jpg",
+			image: "img/aasblaesten.png",
 			desc: "Det eneste studentorchesteret i Ås. Åpent for alle."
 		}
 	]
