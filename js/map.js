@@ -53,25 +53,25 @@ var orchestras = [
 		{
 			name: "Force Marsjør Juzz-Band",
 			link: "http://force.uib.no",
-			image: "img/bb.jpg",
+			image: "img/forcemarsjoer.png",
 			desc: "For studenter ved det Juridiske fakultet ved UiB."
 		},
 		{
 			name: "Medicinsk Blæse et Spadserensemble",
 			link: "https://www.facebook.com/Ensemblet/",
-			image: "img/bb.jpg",
+			image: "img/medicinskblaeseetspadserensemble.png",
 			desc: "Orchester for medisinere"
 		},
 		{
 			name: "Musikselskabet Larmonien",
 			link: "http://larmonien.b.uib.no/",
-			image: "img/bb.jpg",
+			image: "img/larmonien.png",
 			desc: "Et orchester for alle fakulteter og studiesteder i Bergen."
 		},
 		{
 			name: "Teknolikken",
 			link: "https://www.facebook.com/teknolikken/",
-			image: "img/bb.jpg",
+			image: "img/teknolikken.png",
 			desc: "Blåseorchester ved Høgskolen i Bergen"
 		}
 	],
@@ -79,7 +79,7 @@ var orchestras = [
 		{
 			name: "Spadser & Blæse-ensemblet",
 			link: "http://www.stastudent.no/spadser-blaese-ensemblet/",
-			image: "img/bb.jpg",
+			image: "img/spadserogblaeseensemblet.png",
 			desc: "Det eneste studentorchesteret i Kristiansand. Åpent for alle."
 		}
 	],
@@ -87,7 +87,7 @@ var orchestras = [
 		{
 			name: "Berseblæsten",
 			link: "http://org.ntnu.no/berse/",
-			image: "img/bb.jpg",
+			image: "img/berseblaesten.png",
 			desc: "Studentorchesteret til Berstudentenes forening. "
 		},
 		{
@@ -105,13 +105,13 @@ var orchestras = [
 		{
 			name: "Strindens Promenade Orchester",
 			link: "http://www.strindens.no",
-			image: "img/bb.jpg",
+			image: "img/strindens.png",
 			desc: "Studentersamfunnets studentorchester."
 		},
 		{
 			name: "TapHel & Toddy",
 			link: "http://ttoddy.blogspot.no",
-			image: "img/bb.jpg",
+			image: "img/taphelogtoddy.png",
 			desc: "Studentorchester ved Høiskolens Chemikerforening."
 		}
 	],
@@ -119,7 +119,7 @@ var orchestras = [
 		{
 			name: "Ompagniet",
 			link: "http://www.heinrich.no/ompagniet/",
-			image: "img/bb.jpg",
+			image: "img/ompagniet.png",
 			desc: "Verdens nordligste studentorchester."
 		}
 	],
