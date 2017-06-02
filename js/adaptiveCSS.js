@@ -1,9 +1,12 @@
 function updateCSSfile() {
-	var file = document.getElementById("elementsCSSFile");
+	var elements = document.getElementById("elementsCSSFile");
+	var mainstyle = document.getElementById("mainstyleCSSFile");
 
 	if (window.innerWidth < 850) {
-		file.href = "css/elementsMobile.css";
+		elements.href = "css/elementsMobile.css";
+		mainstyle.href = "css/mainstyleMobile.css";
 	} else {
-		file.href = "css/elements.css";
+		elements.href = "css/elements.css";
+		mainstyle.href = "css/mainstyle.css";
 	}
 }
