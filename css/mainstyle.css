@@ -10,7 +10,7 @@ p {
 }
 
 p.orchestraItem {
-	margin-bottom: 15pt;
+	margin-bottom: 18pt;
 	font-size: 12pt;
 }
 
@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-	padding-top: 80px;
+	padding-top: 70px;
 	font-weight: lighter;
 	font-size: 17pt;
 }
@@ -52,6 +52,14 @@ footer {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 100px;
+}
+
+a.orchestraNameLink {
+	color: #6A6A6A;
+	font-size: 12.2pt;
+	font-weight: lighter;
+	text-decoration: none;
+
 }
 
 a.nostyle {

@@ -201,7 +201,7 @@ function outputCityInfo(index) {
 
 		output.innerHTML += "<p class='orchestraItem'>"
 			+ "<a class='nostyle' href='" + orch.link + "'><img src='" + orch.image + "' class='orchestraImage " + imageOrientation + "'></a>"
-			+ "<a href='" + orch.link + "' class='underlineOnHover'>" + orch.name + "</a>.<br>"
+			+ "<a href='" + orch.link + "' class='orchestraNameLink underlineOnHover'>" + orch.name + "</a><br>"
 			+ orch.desc + "</p>";
 	}
 	
