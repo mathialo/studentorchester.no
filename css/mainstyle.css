@@ -46,12 +46,13 @@ li {
 	font-size: 13pt;
 }
 
-footer {
+.footer {
+	clear: both;
 	font-size: 8pt;
 	color: gray;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 100px;
+	margin-top: 10px;
+	margin-bottom: 100px;
 }
 
 a.orchestraNameLink {
