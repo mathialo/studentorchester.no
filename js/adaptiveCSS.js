@@ -1,7 +1,7 @@
 function updateCSSfile() {
 	var file = document.getElementById("elementsCSSFile");
 
-	if (window.innerWidth < 800) {
+	if (window.innerWidth < 850) {
 		file.href = "css/elementsMobile.css";
 	} else {
 		file.href = "css/elements.css";

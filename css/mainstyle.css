@@ -12,6 +12,7 @@ p {
 p.orchestraItem {
 	margin-bottom: 18pt;
 	font-size: 12pt;
+	min-height: 40pt;
 }
 
 img.orchestraImage {

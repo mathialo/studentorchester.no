@@ -4,7 +4,7 @@
 }
 
 .element {
-	width: 800px;
+	width: 850px;
 	padding: 0px;
 /*	border-color: #656565;
 	border-radius: 10px;
@@ -21,6 +21,6 @@
 }
 
 #mapOutput {	
-	width: 300px;
+	width: 350px;
 	float: left;
 }
